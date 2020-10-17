@@ -1,0 +1,27 @@
+{
+  "name": "ToDo-App",
+  "version": "1.0.0",
+  "description": "Task Manager App Created By Ravi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Ravi",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "multer": "^1.4.2",
+    "sharp": "^0.26.2",
+    "validator": "^13.1.17"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="container" class="model">
+        <div class="topnav">
+            <a href="/">Home</a>
+            <div class="topnav-right">
+                <a class="active" href="/register">Sign Up</a>
+                <a href="/login">Log In</a>
+            </div>
+        </div>
+        <form id="text" action="/users/" method="POST">
+            <div class="header">
+                <h1>REGISTER</h1>
+            </div>
+            <div id="form">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter Name">
+                <br>
+                <br>
+                <label for="age">AGE</label><br>
+                <input type="number" id="age" name="age" required placeholder="Enter Age">
+                <br>
+                <br>
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter Email">
+                <br>
+                <br>
+                <label for="password">PASSWORD</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <br>
+                <br>
+                <a href="/login"><button type="submit">Sign Up</button></a>
+            </div>
+            <div id="bottom">
+                <a href="/"><button type="button" id="cancel">Cancel</button></a>
+                <a href="/login" class="pwd">Already Have An Account?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

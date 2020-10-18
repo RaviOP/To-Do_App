@@ -7,7 +7,6 @@ const path = require('path')
 const hbs = require('hbs')
 
 const app = express()
-const PORT = process.env.PORT || 3000
 
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json())
@@ -24,6 +23,4 @@ app.use(indexRoute)
 app.use('/users',userRoute)
 app.use('/tasks',taskRoute)
 
-app.listen(PORT,()=>{
-    console.log(`Server is Up and Running on Port ${PORT}`)
-})
+module.exports = app
